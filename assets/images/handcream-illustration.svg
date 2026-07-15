@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGrad2" cx="55%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#211f18"/>
+      <stop offset="100%" stop-color="#0e0d09"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad2" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#6d7250"/>
+      <stop offset="55%" stop-color="#565a3f"/>
+      <stop offset="100%" stop-color="#3a3d2a"/>
+    </linearGradient>
+    <linearGradient id="metal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef0ec"/>
+      <stop offset="45%" stop-color="#a9aca3"/>
+      <stop offset="100%" stop-color="#63655d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bgGrad2)"/>
+  <ellipse cx="205" cy="282" rx="86" ry="12" fill="#000" opacity="0.4"/>
+
+  <!-- split ring -->
+  <circle cx="222" cy="52" r="20" fill="none" stroke="url(#metal2)" stroke-width="4.5"/>
+  <circle cx="222" cy="52" r="15.5" fill="none" stroke="url(#metal2)" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- cord loop -->
+  <path d="M205 68 Q198 84 208 96" fill="none" stroke="#8a8264" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- capsule body (pill shape, taller for hand cream) -->
+  <rect x="150" y="94" width="100" height="182" rx="50" fill="url(#bodyGrad2)"/>
+  <rect x="150" y="94" width="100" height="182" rx="50" fill="none" stroke="#8f9377" stroke-width="0.6" opacity="0.4"/>
+  <path d="M150 144 h100" stroke="#0c0b08" stroke-width="1" opacity="0.25"/>
+
+  <!-- engraved logo -->
+  <circle cx="184" cy="176" r="2" fill="none" stroke="#211f16" stroke-width="1.1" opacity="0.55"/>
+  <text x="200" y="200" font-family="Fraunces, serif" font-weight="500" font-size="26" fill="#211f16" text-anchor="middle" opacity="0.55">ikki</text>
+  <circle cx="216" cy="176" r="2" fill="none" stroke="#211f16" stroke-width="1.1" opacity="0.55"/>
+  <path d="M188 168 q12 -8 24 0" fill="none" stroke="#211f16" stroke-width="1.1" opacity="0.4"/>
+
+  <!-- hanging metal disc tag -->
+  <circle cx="272" cy="96" r="4" fill="none" stroke="url(#metal2)" stroke-width="3"/>
+  <path d="M272 100 L278 118" stroke="url(#metal2)" stroke-width="2.5"/>
+  <circle cx="280" cy="140" r="26" fill="url(#metal2)"/>
+  <circle cx="280" cy="140" r="26" fill="none" stroke="#5c5e56" stroke-width="1" opacity="0.5"/>
+  <text x="280" y="145" font-family="Fraunces, serif" font-weight="500" font-size="13" fill="#3a3b34" text-anchor="middle" opacity="0.7">ikki</text>
+
+  <circle cx="170" cy="120" r="1.4" fill="#15140d" opacity="0.4"/>
+  <circle cx="230" cy="140" r="1.1" fill="#15140d" opacity="0.35"/>
+  <circle cx="182" cy="240" r="1.3" fill="#15140d" opacity="0.35"/>
+</svg>
