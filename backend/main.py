@@ -11,6 +11,9 @@ import models
 import schemas
 from database import engine, get_db
 
+import os
+print(f"[startup] DATABASE_URL env var set? {'DATABASE_URL' in os.environ}")
+
 # 서버가 켜질 때, models.py에 정의된 테이블이 DB에 없으면 자동으로 만들어줘요.
 # (이미 있으면 아무 일도 안 일어남 - 안전합니다)
 models.Base.metadata.create_all(bind=engine)
