@@ -15,6 +15,13 @@ from database import engine, get_db
 # (이미 있으면 아무 일도 안 일어남 - 안전합니다)
 models.Base.metadata.create_all(bind=engine)
 
+# 지금 어떤 DB에 연결되어 있는지 로그로 확인할 수 있게 출력해요.
+# (비밀번호는 가려서 출력하니 로그에 노출될 걱정은 없어요)
+from database import DATABASE_URL
+import re
+_safe_url = re.sub(r"://[^:]+:[^@]+@", "://***:***@", DATABASE_URL)
+print(f"[startup] connected to: {_safe_url}")
+
 app = FastAPI(title="ikki API", description="ikki 웹사이트 백엔드 공부용 서버")
 
 
